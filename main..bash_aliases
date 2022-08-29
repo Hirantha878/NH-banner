@@ -1,9 +1,14 @@
+echo
 
 
-
-
-
-
+echo -e $lb "	███╗░░██╗██╗░░██╗░░░░░░██████╗░░█████╗░███╗░░██╗███╗░░██╗███████╗██████╗░ "
+echo -e $lb "	████╗░██║██║░░██║░░░░░░██╔══██╗██╔══██╗████╗░██║████╗░██║██╔════╝██╔══██╗ "
+echo -e $lb "	██╔██╗██║███████║█████╗██████╦╝███████║██╔██╗██║██╔██╗██║█████╗░░██████╔╝ "
+echo -e $lb "	██║╚████║██╔══██║╚════╝██╔══██╗██╔══██║██║╚████║██║╚████║██╔══╝░░██╔══██╗ "
+echo -e $lb "	██║░╚███║██║░░██║░░░░░░██████╦╝██║░░██║██║░╚███║██║░╚███║███████╗██║░░██║ "
+echo -e $lb "	╚═╝░░╚══╝╚═╝░░╚═╝░░░░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝ "
+echo -e $r  "                                              Tool by - Ishan Jay  "
+echo
 echo -e $y "what is your banner name ? : \c"
 read Bname
 echo
@@ -17,7 +22,7 @@ echo "PS1='\$ '" >temp.txt
 
 #remove old files
 rm -rf /data/data/com.termux/files/user/etc/zshrc
-rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
+rm -rf /data/data/com.termux/files/user/etc/bash.bashrc
 
 #inject files to zshrc
 cat "clear.txt" >> /data/data/com.termux/files/user/etc/zshrc
@@ -33,5 +38,5 @@ cat "temp.txt"  >> /data/data/com.termux/files/user/etc/bash.bashrc
 
 rm -rf name.txt Bname.txt clear.txt temp.txt
 echo
-figlet finish| lolcat
+figlet finish | lolcat
 echo -e $r "Please Restart Your Termux"
